@@ -11,6 +11,17 @@ ul li{
 a{
     text-decoration: none;
 }
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3, h4, h5 {
+    font-family: 'Roboto Slab';
+}
+
+strong {
+    font-family: "Montserrat", sans-serif;
+}
 /* End Default */
 
 /* ==================================Exemple=================================================== */
@@ -81,8 +92,10 @@ body{
     z-index: 0;
 }
 .header__heading{
-    font-size: larger;
+    font-size: xx-large;
     z-index: 1;
+    font-family: "Roboto Slab", serif;
+
 }
 .nav ul{
     display: flex;
@@ -91,14 +104,16 @@ body{
     z-index: 1;
 }
 
-.nav__link a{
+.nav__link a {
     color: #000000;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
 }
-
 /* ===================Home=====================*/
 .home{
-    height: 100vh;
-
+    height: 75vh;
+    display: flex;
+    place-items: center;
 }
 .home__text{
     line-height: normal;
@@ -118,14 +133,17 @@ body{
 }
 .home__img__rova{
     max-width: 90%;
+    box-shadow: 18px 20px 30px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
 }
 
 
 /* ===================About=====================*/
 .about,.about__section2{
     height: 100vh;
+    background: #f3f3f3;
 }
-
+/* 
 
 @media (min-width: 1200px) and (max-width: 1400px) {
 
@@ -142,7 +160,7 @@ body{
         flex-direction: column;
         align-items: center;
     }*/
-    .home__text__presentation{
+    /* .home__text__presentation{
         font-size: 15px;
     }
     .home__text__name{
@@ -152,5 +170,34 @@ body{
         font-size: 40px;
     }
 
-}
+} */
 
+/* Menu responsive */
+@media (max-width: 1187px) { 
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__heading {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 35px;
+        color: #000 !important;
+        opacity: 1 !important;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home {
+        margin-top: 30px;
+    }
+ }
