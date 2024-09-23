@@ -35,55 +35,6 @@ ul li{
 a{
     text-decoration: none;
 }
-/*p {
-    font-family: "Montserrat", sans-serif;
-}
-
-h1,h2,h3, h4, h5 {
-    font-family: 'Roboto Slab';
-}
-
-strong {
-    font-family: "Montserrat", sans-serif;
-}*/
-/* End Default */
-
-/* ==================================Exemple=================================================== */
-/* .glass-box{
-    position: relative;
-    background: rgba(128, 128, 128, 0.3);
-    opacity: 45%;
-    border-radius: 15px;
-    padding: 30px;
-    width: 200px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 0;    
-}
-.glass-box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: inherit;
-    filter: blur(100px);
-    z-index: 0;
-}
-h2, p{
-    position: relative;
-    z-index: 1;
-
-} */
-
-
-
-/* background-color: #d8d8d8; */
-
 
 /*=================Menu=====================*/
 .header{
@@ -91,8 +42,7 @@ h2, p{
     z-index: 0;
     display: flex;
     justify-content: center;
-    /*background: rgba(128, 128, 128, 0.2);*/
-     background: rgba(255, 255, 255, 0.4); 
+    background: rgba(255, 255, 255, 0.4); 
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     backdrop-filter: blur(10px);
@@ -103,38 +53,33 @@ h2, p{
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
 nav.nav{
     padding-top: 10px;
 }
-
 
 .nav ul{
     display: flex;
     flex-direction: row;
     gap: 6rem;
     z-index: 1;
+    padding-left: 0px;
 }
 
 .nav__link a {
     /*font-family: Poppins;*/
-    color: #000000;
+    color: #636669;
     font-size: 20px;
 }
 .nav__link :hover {
-    color: red;
-    padding: 20px; 
-    background: rgba(255,255,255, 0.5);
+    color: rgba(211, 213, 199, 1);
+    padding: 10px;
+    background: linear-gradient(-40deg, #35c2fd, #f1810f);
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 
-
 /* ===================Home=====================*/
-.home{
-   /* height: 90vh;*/
- /*   display: flex;
-    place-items: center;*/
-}
+
 .home__container {
     border-radius: 25px;
     background: linear-gradient(-40deg, #35c2fd, #f1810f);
@@ -142,6 +87,7 @@ nav.nav{
 .home__text{
     line-height: normal;
     padding-top: 5rem !important;
+    color: #636669;
 }
 .home__text__container{
     border-top-left-radius: 25px;
@@ -151,7 +97,6 @@ nav.nav{
     backdrop-filter: blur(6px);
     box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .home__text__presentation{
     font-size: 30px;
@@ -168,13 +113,10 @@ nav.nav{
     font-size: 53px;
     font-weight: 800;
 }
-/*.dev{
-    position: relative;
-    top: 14px;
-    left: 14px;
+.me{
+    font-size: 30px;
+    font-weight: 200;
 }
-*/
-
 
 .home__img__rova{
     max-width: 85%;
@@ -211,9 +153,8 @@ nav.nav{
     backdrop-filter: blur(6px);
     box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    color: #636669;
 }
-
-
 
 /* ===================About-Education=====================*/
 
@@ -227,13 +168,16 @@ nav.nav{
 .date__education{
     font-size: 8rem;
     font-family: Catamaran;
+    color: #636669;
 }
 .about-education__diplome{
     font-family: Poppins;
     font-weight: 700;
+    color: #636669;
 }
 .about-education__school{
     font-weight: 300;
+    color: #636669;
 }
 /*====================Service==========================*/
 .service__container{
@@ -266,115 +210,389 @@ nav.nav{
 }
 
 /*====================Skills==========================*/
+.skill__container{
+    background: linear-gradient(30deg, #35c2fd, #f1810f);
+    opacity: 0.7;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.skill__intituled{
+    color: rgba(211,213,199,1);
+}
+.logo{
+    width: 100px;
+    height:100px;
+}
+.skill__language__container{
+    padding: 40px;
+    background: rgba(255,255,255,0.5);
+    opacity: 0.7;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.service__language__intituled, .service__make__intituled{
+    color: #636669;
+}
+
+/*====================Work==========================*/
+.work__container{
+    background: linear-gradient(30deg, #35c2fd, #f1810f);
+    opacity: 0.7;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.work__intituled{
+    color: rgba(211,213,199,1);
+/*    text-align: center;   */
+}
+
+.work__container {
+    background: linear-gradient(-40deg, #35c2fd, #f1810f);
+    opacity: 0.7;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.work__img{
+    width: 25%;
+}
+
+.work__made-1{
+    padding: auto;
+    background: rgba(255,255,255,0.5);
+    opacity: 0.7;
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+}
+.work__made__intituled{
+    color: #636669;
+}
+
+/*====================Contacts==========================*/
+
+.footer{
+    background: linear-gradient(30deg, #35c2fd, #f1810f);
+    opacity: 0.7;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.contact__logo{
+    width: 10%;
+    height: 10%;
+}
+.contact__intituled{
+    font-size: 1em;
+/*    color: rgba(211, 213, 199, 1);*/
+    color: #636669;
+
+}
+.ligne{
+    width: 250px;
+    color: rgba(211, 213, 199, 1);
+}
+.link{
+    color: rgba(211, 213, 199, 1);
+}
+.link:hover{
+    color: #35c2fd;
+}
 
 
 
+/* Menu responsive */
+@media (max-width: 1200px){ 
 
+ }
 
+ @media (max-width: 968px){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
+ }
 @media (min-width: 1200px) and (max-width: 1400px) {
 
 }
-@media (min-width: 992px) and (max-width: 1200px) {
 
+@media (max-width: 1200px) and (min-width: 992px){
+    .home__img__rova {
+        max-width: 70%;
+        box-shadow: 18px 20px 30px 16px rgba(0, 0, 0, 0.1);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        max-height: 100%;
+    }
+    .home__text{
+        padding-top:40px!important;
+        padding-bottom: 20px!important;
+        padding-left: 40px!important;
+        padding-right: 0px!important;
+    }
 
+    .home__text__container,.home__container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .home__bloc__container{
+        margin:0px;
+    }
+    .home__text__preview{
+        margin-bottom: 0px!important;
+        font-size: 40px;
+    }
+    .home__text__name {
+        font-size: 40px;
+    }
+    .home__text__presentation, .me{
+        font-size: 20px;
+    }
+/*================About==============================*/
+    .about__experience{
+        display: block!important;
+    }
+
+    .about__experience-1{
+        margin-top: 0px;
+    }
+    .about__experience-2{
+        margin-top: 30px;
+    }
+    h4.about__experience__intituled, h5.about__experience__intituled{
+        font-size: 1.5em;
+    }
+    ul li{
+        font-size: 1.3em;
+    }
+
+    .about__experience-1, .about__experience-2 {
+        padding: 2rem!important;
+    }
 
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-/*    .home .container .row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }*/
-    /* .home__text__presentation{
-        font-size: 15px;
-    }
-    .home__text__name{
-        font-size: 30px;
-    }
-    .home__text__preview{
-        font-size: 40px;
-    }
-
-} */
-
-/* Menu responsive */
-@media (max-width: 1187px) { 
+@media (max-width: 992px) and (min-width: 768px) {
+/*================Menu==============================*/
     .header {
         display: flex;
         flex-direction: column;
-    }
-    .header__heading {
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 35px;
-        color: #000 !important;
-        opacity: 1 !important;
+        justify-content:center;
+        align-items: center;
     }
 
-    .nav {
+/*================home==============================*/
+    .home {
+        margin-top: 30px;
+    }
+    .home__text__preview{
+        margin-bottom: 0px!important;
+        font-size: 40px;
+    }
+    .home__text__name {
+        font-size: 50px;
+    }
+    .home__text__presentation, .me{
+        font-size: 20px;
+    }
+    .home__container.container{
+        margin-left: 0px;
+        margin-right:0px;
+        padding-left:0px;
+        padding-right: 0px;
+        max-width:100%;
+    }
+    .home__img__rova {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .home__text{
+        padding-right:0px !important;
+        padding-top:20px!important;
+    }
+    .img__container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .home__text__preview{
+       margin-bottom: 0px!important;
+    }
+    .home__text__container{
+        padding-right: 2px!important;
+        padding-left: 0px!important;
+    }
+    .home__bloc__container{
+        margin-left:0px!important;
+        margin-right:0px!important;
+    }
+/*================About==============================*/
+    .about{
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width:100%;
+    }
+    .about__experience{
+        display: block!important;
+    }
+    .about__experience-1{
+        margin-top: 0px;
+    }
+    .about__experience-2{
+        margin-top: 30px;
+    }
+    h4.about__experience__intituled, h5.about__experience__intituled{
+        font-size: 1.5em;
+    }
+    ul li{
+        font-size: 1.2em;
+    }
+    .about__experience-1, .about__experience-2 {
+    padding: 2rem!important;
+    }
+    li br{
+        display: none;
+    }
+    .about-education__container {
+        max-width: 100%;
+    }
+    .service__container {
+        max-width: 100%;
+    }
+    .service__make__container {
+        display: block!important;
+    }
+    .service__make-1, .service__make-2, .service__make-3{
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        margin-bottom:10px!important;
+    }
+    .service__make__container{
+        
+    }
+    .service__make__intituled{
+        font-size: 2em!important;
+    }
+    .skill__container {
+        max-width: 100%;
+    }
+/*================work==============================*/
+    .work__container{
+        max-width: 100%;
+    }
+    .work__img{
+        width: 25%;
+    }
+
+
+
+
+/*================Contact==============================*/
+
+    .contact__container{
         display: flex;
         flex-direction: column;
+    }
+    .contact__container a div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start!important;
+        align-items: start!important;
+    }
+    .contact__logo{
+        width: 5%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 524px){
+    /*================Menu==============================*/
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
     }
 
     .nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap:3rem;
+        padding-left: 0px;
     }
 
     .home {
         margin-top: 30px;
     }
- }
+    .home__img__rova,.img__container{
+        display: none!important;
+    }
+    .col-8{
+        width: 100%!important;
+    }
+    .home__container,.home__bloc__container,.home__text__container{
+        display: block;
+        max-width: 100%!important;
+    }
+    .home__bloc__container{
+        margin:0px!important;
+    }
+    .home__text{
+        padding-right: 0px!important;
+        padding-top: 20px!important;
+        padding-bottom: 20px!important;
+    }
+    .name{
+        display: flex;
+        flex-wrap: no-wrap;
+
+    }
+    /*================About==============================*/
+    .about__experience{
+        display: block!important;
+    }
+    .about__experience-1,.about__experience-2{
+        margin-top: 20px;
+        padding-top: 20px!important;
+        padding-bottom: 20px!important;
+        padding-left: 30px!important;
+        padding-right: 10px!important;
+    }
+    ul{
+        padding: 0px!important;
+        margin:0px!important;
+    }
+
+    /*================service==============================*/
+    .service__make__container{
+        display: block!important;
+    }
+    .service__make-1, .service__make-2, .service__make-3 {
+        margin-top: 20px;
+    }
+
+    /*================skills==============================*/
+    .language__base,.language__framework__css{
+        display: block!important;
+
+    }
+    .skill__language__container{
+        margin-top: 20px;
+
+    }
+
+    /*================Contact==============================*/
+
+    .contact__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__container a div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start!important;
+        align-items: start!important;
+    }
+    .contact__logo{
+        width: 5%;
+    }
+
+}
+
