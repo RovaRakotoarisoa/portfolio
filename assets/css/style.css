@@ -52,6 +52,9 @@ a{
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.menu-icon{
+    display: none;
+}
 
 nav.nav{
     padding-top: 10px;
@@ -285,8 +288,8 @@ nav.nav{
 }
 .contact__intituled{
     font-size: 1em;
-/*    color: rgba(211, 213, 199, 1);*/
-    color: #636669;
+    color: rgba(211, 213, 199, 1);
+/*    color: #636669;*/
 
 }
 .ligne{
@@ -378,7 +381,9 @@ nav.nav{
         justify-content:center;
         align-items: center;
     }
-
+    #menu{
+        display:inline;
+    }
 /*================home==============================*/
     .home {
         margin-top: 30px;
@@ -501,7 +506,7 @@ nav.nav{
     }
 }
 
-@media (max-width: 768px) and (min-width: 524px){
+@media (max-width: 768px){
     /*================Menu==============================*/
     .header {
         display: flex;
@@ -517,9 +522,19 @@ nav.nav{
         gap:3rem;
         padding-left: 0px;
     }
+    .home__text__presentation, .me {
+        font-size: 15px;
+    }
 
+    .home__text__name, .home__text__preview, .about__intituled__text, .about-education__intituled{
+        font-size: 30px;
+    }
     .home {
         margin-top: 30px;
+        padding:10px;
+    }
+    main{
+        padding: 10px;
     }
     .home__img__rova,.img__container{
         display: none!important;
@@ -527,7 +542,7 @@ nav.nav{
     .col-8{
         width: 100%!important;
     }
-    .home__container,.home__bloc__container,.home__text__container{
+    .home__bloc__container,.home__text__container{
         display: block;
         max-width: 100%!important;
     }
@@ -558,6 +573,21 @@ nav.nav{
     ul{
         padding: 0px!important;
         margin:0px!important;
+    }
+
+    .date__education{
+        font-size: 60px;
+    }
+    .about-education__diplome, .about-education__school{
+        font-size: 15px;
+    }
+
+    .conteneur{
+        display: block;
+    }
+    .conteneur-reverse{
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     /*================service==============================*/
@@ -593,6 +623,32 @@ nav.nav{
     .contact__logo{
         width: 5%;
     }
+    .work__img {
+        width: 80%;
+    }
 
+    .header{
+        display:none;
+    }
+    .subMenu{
+        display: flex;
+        justify-content: center;
+    }
+    .icon{
+        width:100%;
+    }
+    .menu-icon{
+        display: inline;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        width: 50px;
+        border-radius: 100px;
+        background: rgba(255,255,255,0.9);
+        opacity: 0.7;
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
 }
 

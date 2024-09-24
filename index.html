@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- =========== Header =============== -->
-    <header class="header">
+    <header class="header" id="subMenu">
             <nav class="nav">
                 <ul class="">
                     <li class="nav__link"><a href="#home">home</a></li>
@@ -20,8 +20,12 @@
                     <li class="nav__link"><a href="#footer">contact</a></li>
                     <li class="d-none"><input type="color"></li>
                 </ul>
-            </nav> 
+                
+            </nav>
     </header>
+    <div class="menu-icon"  onclick="toggleMenu()">
+        <img src="assets/img/icons8-menu.svg" alt="Logo menu" class="icon">
+    </div>
 
     
 <!--  End Header  -->
@@ -103,7 +107,7 @@
             <div class="about-education__container container p-5">
                 <h1 class="about-education__intituled">Education</h1>
                 <div class="row">
-                    <div class="row pt-2">
+                    <sdiv class="row conteneur pt-2">
                         <div class="col-6"><h2 class="date__education">2023</h2></div>
                         <div class="col-6">
                             <h3 class="about-education__diplome">Bachelor's degree in
@@ -114,7 +118,7 @@
                         </div>
                     </div>
 
-                    <div class="row pt-5">
+                    <div class="row conteneur-reverse pt-5">
                         <div class="col-6 d-flex flex-column justify-content-center">
                             <h3 class="about-education__diplome">Bacc Serie D</h3>
                             <h4 class="about-education__school">Magnificat <span class="span"> | </span>Bevalala</h4>
@@ -123,7 +127,7 @@
                         <div class="col-6"><h2 class="date__education">2020</h2></div>
                     </div>
 
-                    <div class="row pt-5">
+                    <div class="row conteneur pt-5">
                         <div class="col-6"><h2 class="date__education">2016</h2></div>
                         <div class="col-6 d-flex flex-column justify-content-center">
                             <h3 class="about-education__diplome">BEPC</h3>
@@ -132,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="row pt-5">
+                    <div class="row conteneur-reverse pt-5">
                         <div class="col-6 d-flex flex-column justify-content-center">
                             <h3 class="about-education__diplome">CEPE</h3>
                             <h4 class="about-education__school">Les Meilleurs <span class="span"> | </span> Andoharanofotsy</h4>
@@ -261,13 +265,13 @@
                        +261 34 65 017 92
                     </p>
                 </a>
-                <a href="#" class="">
+                <a href="https://linkedin.com/in/rova-rakotoarisoa-92a8b2287" class="">
                     <div class="d-flex justify-content-start align-items-center gap-3">
                         <img src="assets/img/linkedin-icon.svg" class="contact__logo">
                         <span class="contact__intituled">LinkedIn</span>
                     </div>
                     <p class="link">
-                        rovarakotoarisoa114@gmail.com
+                        https://linkedin.com/in/rova-rakotoarisoa-92a8b2287
                     </p>
                 </a>
                 <a href="https://rovarakotoarisoa.github.io" class="">
@@ -295,5 +299,12 @@
                 </p>
         </div>
     </footer> -->
+
+    <script type="text/javascript">
+        let subMenu = document.getElementById("subMenu")
+        function toggleMenu(){
+            subMenu.classList.toggle("subMenu");
+        }
+    </script>
 </body>
 </html>
